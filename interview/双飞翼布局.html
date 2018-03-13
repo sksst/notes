@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <!-- 双飞翼布局 -->
+    <style>
+        body {
+            min-width: 550px;
+        }
+        .col {float: left;}
+        #main {
+            width: 100%;
+            background: yellow;
+        }
+        #main-wrap {
+            margin: 0 200px 0 200px;
+        }
+        #left {
+            width: 200px;
+            margin-left: -100%;
+            background: red;
+        }
+        #right {
+            width: 200px;
+            margin-left: -200px;
+            background: blue;
+        }
+    </style>
+    <div id="container">
+        <div id="main" class="col">
+            <div id="main-wrap">
+                #main
+            </div>
+        </div>
+        <div id="left" class="col">
+        #left
+        </div>
+        <div id="right" class="col">
+        #right
+        </div>
+    </div>
+</body>
+</html>
